@@ -30,17 +30,20 @@
     </div>
   </nav>
   <div class="m-5 d-flex justify-content-center">
-    <div class="w-50">
+    <div class="w-50">id="required"
       <h1 class="registration-title mb-3">Registration Form</h1>
       <form id="registrationform">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" placeholder="Enter your name" id="name" />
-          <div id="name" class="form-text">Please enter your full name.</div>
+          <input type="text" class="form-control" placeholder="Enter your name" id="name"
+          required  />
+          
+          <div id="name" class="form-text">Please enter your full name .</div>
+      
         </div>
         <div class="mb-3">
           <label for="interests">Select your interests</label>
-          <select class="form-select" id="interests" multiple>
+          <select class="form-select" id="interests" multiple required>
             <option value="Movies">Frontend</option>
             <option value="Games">Backend</option>
           </select>
@@ -48,12 +51,14 @@
         </div>
         <div class="mb-3">
           <label for="dob" class="form-label">Date of Birth</label>
-          <input type="date" id="dob" class="form-control" />
+          <input type="date" id="dob" class="form-control"
+          required />
           <div id="dob" class="form-text">Select your date of birth.</div>
         </div>
         <div class="mb-3 form-check">
           <label class="form-check-label" for="darkMode">Darkmode</label>
-          <input type="checkbox" class="form-check-input" id="darkMode" />
+          <input type="checkbox" class="form-check-input" id="darkMode"
+          required />
           <div id="darkMode" class="form-text">Toggle dark and light mode.</div>
         </div>
         <div>
